@@ -19,7 +19,7 @@
     "build"
   ],
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "node-fetch": "^2.1.2"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "jest": "^23.1.0",
     "nock-record": "^0.3.3",
     "ts-jest": "^23.10.4",
-    "typedoc": "^0.13.0",
+    "typedoc": "^0.15.0",
     "typescript": "^3.1.6"
   },
   "jest": {
