@@ -1,6 +1,6 @@
 {
   "name": "@nuel/challonge-ts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Challonge API interface",
   "main": "./build/index.js",
   "typings": "build/index.d.ts",
