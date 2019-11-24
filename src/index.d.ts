@@ -99,7 +99,7 @@ export class Tournament {
 }
 
 export namespace MatchAdapter {
-	function index(api_key: string, tournament_url: string): Promise<MatchInterfaces.indexMatchesResponse>;
+	function index(api_key: string, tournament_url: string, state?: MatchInterfaces.matchStateType, participant_id?: number): Promise<MatchInterfaces.indexMatchesResponse>;
 
 	function show(api_key: string, tournament_url: string, match_id: number): Promise<MatchInterfaces.showMatchResponse>;
 

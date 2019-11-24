@@ -3,10 +3,16 @@ import { MatchInterfaces } from '../';
 
 /** Namespace for all of the Match routes */
 export namespace MatchAdapter {
-    /** Retrieve a tournament's match list. */
-  export function index(api_key: string, tournament_url: string): Promise<MatchInterfaces.indexMatchesResponse> {
+  /** Retrieve a tournament's match list. */
+  export function index(api_key: string, tournament_url: string, state?: MatchInterfaces.matchStateType, participant_id?: number): Promise<MatchInterfaces.indexMatchesResponse> {
     return new Promise((resolve, reject) => {
-      ChallongeAdapterBase.getRequest(`tournaments/${tournament_url}/matches`, api_key).then(res => {
+
+      const params = {
+        state,
+        participant_id,
+      };
+
+      ChallongeAdapterBase.getRequest(`tournaments/${tournament_url}/matches`, api_key, params).then(res => {
         const { data, status } = res;
 
         resolve({ matches: data, status });

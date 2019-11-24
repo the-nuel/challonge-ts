@@ -1,11 +1,11 @@
 {
-  "name": "challonge-ts",
-  "version": "0.0.1",
+  "name": "@nuel/challonge-ts",
+  "version": "0.0.6",
   "description": "Challonge API interface",
   "main": "./build/index.js",
   "typings": "build/index.d.ts",
-  "repository": "github:EdwardJFox/challonge-ts",
-  "author": "EdwardJFox",
+  "repository": "github:the-nuel/challonge-ts",
+  "author": "Michael Fiford",
   "license": "MIT",
   "scripts": {
     "test": "jest tests",

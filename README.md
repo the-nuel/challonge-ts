@@ -1,3 +1,5 @@
+Forked from: [challonge-ts](https://github.com/EdwardJFox/challonge-ts).
+
 # Challonge Typescript API Interface
 An overdone [Challonge](https://challonge.com/) API interface and adapter, written with Typescript but should work in ES6+ too.
 
