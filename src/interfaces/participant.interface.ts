@@ -120,9 +120,13 @@ export namespace ParticipantInterfaces {
     participants: Array<participantResponseObject>
   }
 
-  /** Resposne objects */
+  /** Response objects */
   /** Participant object used in responses which contain participants */
   export interface participantResponseObject {
+    participant: participantResponseInnerObject
+  }
+
+  export interface participantResponseInnerObject {
     active: boolean
     checked_in_at: null
     created_at: string
