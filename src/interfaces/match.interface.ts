@@ -60,8 +60,7 @@ export namespace MatchInterfaces {
     match: matchResponseObject
   }
 
-  /** Match response object */
-  export interface matchResponseObject {
+  export interface matchResponseInnerObject {
     attachment_count: number,
     created_at: Date,
     group_id: number,
@@ -87,7 +86,12 @@ export namespace MatchInterfaces {
     updated_at: Date,
     winner_id: number,
     prerequisite_match_ids_csv: string,
-    scores_csv: string
+    scores_csv: string,
+  }
+
+  /** Match response object */
+  export interface matchResponseObject {
+    match: matchResponseInnerObject
   }
 
   export type matchStateType = 'open' | 'pending' | 'complete';
