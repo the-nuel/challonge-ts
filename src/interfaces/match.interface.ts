@@ -47,7 +47,7 @@ export namespace MatchInterfaces {
 
   /** Response expected from the show match endpoint */
   export interface showMatchResponse extends BaseInterfaces.baseResponse {
-    match: matchResponseObject
+    match: matchResponseInnerObject
   }
 
   /** Response expected from the update match endpoint */
