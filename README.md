@@ -9,7 +9,7 @@ The adapter is a direct stateless interface with Challonge, with no frills, you'
 ### Example - Retrieving a list of tournaments with the TournamentAdapter
 The following returns the direct raw response from the Challonge API
 ```
-import { TournamentAdapter } from 'challonge-ts';
+import { TournamentAdapter } from '@nuel/challonge-ts';
 
 const test = async () => {
   const data = await TournamentAdapter.index('api_key');
@@ -28,7 +28,7 @@ Devised as a nicer abstraction over the adapter, this is a set of classes which 
 ### Example - Retrieving a list of tournaments with the Challonge class
 
 ```
-import { Challonge } from 'challonge-ts';
+import { Challonge } from '@nuel/challonge-ts';
 
 const test = async () => {
   const challonge = new Challonge('api_key')
